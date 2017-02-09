@@ -1,0 +1,76 @@
+body {
+
+background-color: #d7ffaf;
+margin: 0;
+padding: 0;
+
+}
+
+/*#main-title {
+
+  display: block;
+  position: relative;
+  margin-left: auto;
+
+}*/
+
+/*#main-header {
+
+  position: relative;
+  /*display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+
+}*/
+
+.main-page {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mapid {
+
+  display: flex;
+  justify-content: center;
+  /*width: 750px;*/
+  height: 500px;
+  /*height: 70vh; */
+  width: 100vw;
+
+}
+
+#main-header {
+/*
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* try space-between w flex */
+  /*display:inline-block;
+  padding: 0 10px;
+  position:fixed;
+  z-index:99;*/*/
+}
+
+.user-options {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+
+}
+
+a {   // fix
+
+style: none;
+
+}
+
+#logout-button {
+  
+background-color: transparent; border: 0; padding: 0;
+
+
+}

@@ -1,0 +1,32 @@
+<h1>Log in!</h1>
+
+<% if errors %>
+  <span>Something went wrong:</span>
+  <ul class="error-list pad-b-2">
+    <% errors.each do |error| %>
+      <li class="error-item"><%= error %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<form name="registration-form" action="/users/login" method="POST">
+
+  <p>
+    <label for="email">Email</label>
+    <input name="user[email]" type="text"/>
+  </p>
+
+  <p>
+    <label for= "username">Username</label>
+    <input name="user[username]" type="text"/>
+  </p>
+
+  <p>
+    <label for="pasword">Password</label>
+    <input name="user[password]" type="text">
+  </p>
+
+  <p>
+    <input type="submit" value="Sign up here">
+  </p>
+</form>

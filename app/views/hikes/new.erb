@@ -1,0 +1,25 @@
+<h1>Create Hike</h1>
+<form id="new-hike-form" method="POST" action="/hikes">
+  <div>
+    <label for="location">Location</label>
+    <input id="location" type="text" name="hike[location]">
+  </div>
+  <div>
+    <label for="description">Description</label>
+    <textarea id="description" type="text" name="hike[description]">
+    </textarea>
+  </div>
+  <div>
+    <label for="rating">Rating</label>
+    <input id="rating" type="number" name="hike[rating]">
+  </div>
+  <div>
+    <label for="difficulty">Difficulty</label>
+    <input id="difficulty" type="text" name="hike[difficulty]">
+  </div>
+    <input id="user-d" type="hidden" name="hike[user_id]" value="<%=current_user.id%>">
+    <input id="user-d" type="hidden" name="hike[area_id]" value="1">
+  <div>
+    <input type="submit" value="Share your hike">
+  </div>
+</form>

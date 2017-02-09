@@ -1,0 +1,20 @@
+<h2><%= @user.username%></h2>
+
+<section class="profile">
+
+  <p><%= @user.username %> has logged these hikes...</p>
+
+  <% @user.hikes.each do |hike| %>
+
+    <ul>
+      <li><%= hike.location %></li>
+      <li><%= hike.description %></li>
+      <li><%= hike.rating %></li>
+    </ul>
+
+    <% end %>
+
+
+
+
+</section>

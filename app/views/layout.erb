@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/application.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+
+  <script src="/js/application.js"></script> <!-- make sure this is called after Leaflet is loaded -->
+
+
+  <title></title>
+</head>
+<body>
+    <header>
+      <div id="main-header" class="title">
+        <nav>
+          <div class='session'>
+            <ul class='user-options'>
+            <li><a href="/">find my forest</a>
+            <li><a href="/hikes">main</a>
+            <% if logged_in? %>
+            <li><a id='profile-link' href='/users/<%=current_user.id%>'><%=current_user.username%>'s profile</a>
+            <li><form name="logout" method="post" action="/users/logout">
+              <input id="logout-button" type="submit" value="log out">
+              </form>
+            <% else %>
+          <li><a href="/users/new">register</a>
+            <li><a href="/users/login">log in</a>
+          <% end %>
+      </nav>
+    </div>
+    </header>
+    <%= yield %>
+</body>
+</html>

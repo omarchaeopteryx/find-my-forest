@@ -1,0 +1,9 @@
+<h1>Your Hikes</h1>
+<ul>
+  <% @hikes.each do |hike| %>
+    <li>
+      <a href="/hikes/<%= hikes.id %>"><%= hike.location %></a>
+    </li>
+  <% end %>
+</ul>
+<a href="/hike/new">Create Hike</a>

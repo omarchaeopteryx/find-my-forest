@@ -1,0 +1,23 @@
+<h1>Create Hike</h1>
+<form method="POST" action="/hikes">
+  <div>
+    <label for="location">Location</label>
+    <input id="location" type="text" name="hike[location]">
+  </div>
+  <div>
+    <label for="description">Description</label>
+    <textarea id="description" type="text" name="hike[description]">
+    </textarea>
+  </div>
+  <div>
+    <label for="rating">Acidity</label>
+    <input id="rating" type="number" name="hike[rating]">
+  </div>
+  <div>
+    <label for="difficulty">Flavor</label>
+    <input id="difficulty" type="text" name="hike[difficulty]">
+  </div>
+  <div>
+    <input type="submit" value="Create Origin">
+  </div>
+</form>
