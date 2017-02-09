@@ -6,7 +6,7 @@ $(document).ready(function() {
       attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
       maxZoom: 18,
       id: "sherlock-omz.28p6c06o",
-      accessToken: "pk.eyJ1Ijoic2hlcmxvY2stb216IiwiYSI6ImNpdzZ0aXNlZjAwMmEyb21rM215dnV5M24ifQ.4Lmf4bk91K4DBAcW92TLsQ"
+      accessToken: API_TOKEN
   }).addTo(mymap); // FIX - refactor auth to env
 
   // Note that Leaflet doesn't care which basemaps you import from (can be Google, etc.).
